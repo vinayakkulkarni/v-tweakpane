@@ -9,7 +9,7 @@ const install: Exclude<Plugin['install'], undefined> = (
 ) => {
   if (!installed) {
     setVueInstance(instance);
-    instance.component('v-tweakpane', VTweakpane);
+    instance.component('VTweakpane', VTweakpane);
     installed = true;
   }
 };

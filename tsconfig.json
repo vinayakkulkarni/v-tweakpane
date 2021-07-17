@@ -25,6 +25,7 @@
     ],
     "types": [
       "node",
+      "@tweakpane/core"
     ]
   },
   "include": [

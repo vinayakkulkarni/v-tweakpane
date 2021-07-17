@@ -73,9 +73,10 @@ export default {
       sourcemap: true,
       globals: {
         vue: 'vue',
+        tweakpane: 'tweakpane',
       },
     },
   ],
   plugins,
-  external: ['vue'],
+  external: ['vue', 'tweakpane'],
 };
