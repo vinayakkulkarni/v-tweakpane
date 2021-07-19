@@ -16,7 +16,7 @@ module.exports = {
   extends: [
     'prettier',
     'plugin:prettier/recommended',
-    'plugin:vue/recommended',
+    'plugin:vue/vue3-recommended',
     'plugin:jsdoc/recommended',
   ],
   // add your custom rules here
