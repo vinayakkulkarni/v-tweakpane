@@ -34,7 +34,7 @@ object-assign
  * Released under the MIT License.
  */
 
-/*! Tweakpane 3.0.5 (c) 2016 cocopon, licensed under the MIT license. */
+/*! Tweakpane 3.0.6 (c) 2016 cocopon, licensed under the MIT license. */
 
 /** @license React v0.19.1
  * scheduler.production.min.js
