@@ -75,6 +75,7 @@
   .w-full {
     width: 100%;
   }
+
   .h-full {
     height: 100%;
   }
