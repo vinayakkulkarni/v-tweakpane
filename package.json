@@ -28,6 +28,8 @@
     "lint:css": "stylelint \"{,!(node_modules|dist|docs|example)/**/}*.{css,scss,vue}\" --ignore-path .gitignore",
     "lint:css:fix": "stylelint --fix \"{,!(node_modules|dist|docs|example)/**/}*.{css,scss,vue}\" --ignore-path .gitignore",
     "release": "shipjs prepare",
+    "release:dry": "shipjs prepare --dry-run",
+    "release:auto": "shipjs prepare --yes",
     "storybook": "start-storybook -p 3000",
     "build-storybook": "build-storybook -o ./public/storybook"
   },
