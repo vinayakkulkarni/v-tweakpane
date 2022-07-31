@@ -1,6 +1,6 @@
 {
   "name": "v-tweakpane",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tweakpane for Vue",
   "types": "types/index.d.ts",
   "main": "dist/v-tweakpane.cjs.js",
