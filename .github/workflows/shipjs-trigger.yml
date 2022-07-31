@@ -18,13 +18,13 @@ jobs:
       - name: Setup node env 📦
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 'current'
           check-latest: true
           registry-url: https://registry.npmjs.org
           cache: 'npm'
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit --no-optional
+        run: npm ci --prefer-offline --no-audit --omit=optional
         env:
           CI: true
 

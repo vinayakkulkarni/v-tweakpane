@@ -26,7 +26,6 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        node: [16]
 
     steps:
       - name: Check out repository ✨
@@ -42,16 +41,16 @@ jobs:
       - name: Setup node env 📦
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 'current'
           check-latest: true
           registry-url: https://registry.npmjs.org
-          cache: 'npm' 
+          cache: 'npm'
 
       - name: Upgrade npm 🎉
         run: npm install -g npm@latest
 
       - name: Install dependencies 🚀
-        run: npm ci --prefer-offline --no-audit --no-optional
+        run: npm ci --prefer-offline --no-audit --omit=optional
 
       - name: Run linter(s) 👀
         uses: wearerequired/lint-action@v2
