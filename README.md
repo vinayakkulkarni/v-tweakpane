@@ -9,7 +9,7 @@
 [![npm (downloads)](https://img.shields.io/npm/dm/v-tweakpane.svg)](https://npm-stat.com/charts.html?package=v-tweakpane)
 [![npm (bundle size)](https://img.shields.io/bundlephobia/minzip/v-tweakpane)](https://bundlephobia.com/package/v-tweakpane)
 [![license](https://img.shields.io/npm/l/v-tweakpane)](https://github.com/vinayakkulkarni/v-tweakpane/blob/master/LICENSE)
-[![maintenance](https://img.shields.io/maintenance/yes/2021?logo=git)](https://github.com/vinayakkulkarni/v-tweakpane/blob/master/LICENSE)
+[![maintenance](https://img.shields.io/maintenance/yes/2022?logo=git)](https://github.com/vinayakkulkarni/v-tweakpane/blob/master/LICENSE)
 
 [![eslint](https://img.shields.io/npm/dependency-version/v-tweakpane/dev/eslint?logo=eslint)](https://eslint.org/)
 [![prettier](https://img.shields.io/npm/dependency-version/@vinayakkulkarni/v-intl/dev/prettier?logo=prettier)](https://prettier.io/)
