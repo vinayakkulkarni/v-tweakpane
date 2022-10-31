@@ -62,7 +62,7 @@
     "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
     "@vue/compiler-sfc": "^3.2.37",
     "autoprefixer": "^10.4.8",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^9.0.1",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsdoc": "^39.3.4",
