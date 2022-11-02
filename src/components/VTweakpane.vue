@@ -5,16 +5,20 @@
 </template>
 
 <script lang="ts">
-  import {
-    defineComponent,
-    ref,
-    Ref,
-    onMounted,
-    PropType,
-    nextTick,
-  } from 'vue';
+  import { defineComponent, ref, onMounted, nextTick } from 'vue';
   import { Pane } from 'tweakpane';
-  import { PaneProps } from '@/types';
+  import type { Ref, PropType } from 'vue';
+  import type { ButtonProps, TabParams } from '@tweakpane/core';
+  import type { FolderParams } from 'tweakpane';
+  import type { PaneConfig } from 'tweakpane/dist/types/pane/pane-config';
+
+  type PaneProps = {
+    title: string;
+    folders?: FolderParams[];
+    buttons?: ButtonProps[];
+    tabs?: TabParams[];
+    inputs?: { factor?: number; title?: string; color?: string }[];
+  } & PaneConfig;
 
   export default defineComponent({
     name: 'VTweakpane',
@@ -43,6 +47,7 @@
             if (props.pane?.inputs && props.pane.inputs.length > 0) {
               props.pane.inputs.forEach((input) => {
                 for (const [key] of Object.entries(input)) {
+                  // @ts-ignore
                   pane.value?.addInput(input, key);
                 }
               });
