@@ -1,3 +1,19 @@
+# [0.1.0](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.0.3...v0.1.0) (2022-11-02)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/stale from 5 to 6 ([ba780df](https://github.com/vinayakkulkarni/v-tweakpane/commit/ba780dfafb937656779133b2fcd4b6eb84ee170e))
+* **deps:** bump amannn/action-semantic-pull-request from 4 to 5 ([db54431](https://github.com/vinayakkulkarni/v-tweakpane/commit/db5443188d25ef74fc068616670b0cd5d892c9ae))
+* **deps:** bump peaceiris/actions-gh-pages from 3.8.0 to 3.9.0 ([6dd1508](https://github.com/vinayakkulkarni/v-tweakpane/commit/6dd1508f0783750815c2172662ab66f0379f0d2e))
+
+
+### Features
+
+* vite config 🎉 ([2d8dad8](https://github.com/vinayakkulkarni/v-tweakpane/commit/2d8dad8fcac1df502d1906648a180cdb03adb5e9))
+
+
+
 ## [0.0.3](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.0.2...v0.0.3) (2022-07-31)
 
 
