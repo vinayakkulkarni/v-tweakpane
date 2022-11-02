@@ -1,12 +1,17 @@
 module.exports = {
+  plugins: ['stylelint-prettier'],
   extends: [
-    'stylelint-config-standard',
-    'stylelint-config-standard-scss',
-    'stylelint-config-html',
+    'stylelint-prettier/recommended',
     'stylelint-config-recommended-vue',
-    'stylelint-config-prettier',
   ],
-  // add your custom config here
-  // https://stylelint.io/user-guide/configuration
-  rules: {},
+  ignoreFiles: ['node_modules/*', 'src/assets/**'],
+  rules: {
+    'prettier/prettier': [
+      true,
+      {
+        singleQuote: true,
+        tabWidth: 2,
+      },
+    ],
+  },
 };
