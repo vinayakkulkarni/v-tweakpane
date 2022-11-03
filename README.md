@@ -52,7 +52,7 @@
 ### Installation
 
 ```sh
-npm i tweakpane v-tweakpane
+npm i tweakpane v-tweakpane @tweakpane/plugin-essentials
 ```
 
 ### Build Setup

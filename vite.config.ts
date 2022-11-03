@@ -27,7 +27,7 @@ export default defineConfig({
       include: 'node_modules/**',
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', 'tweakpane', '@tweakpane/plugin-essentials'],
       output: {
         exports: 'named',
         banner,
@@ -35,6 +35,8 @@ export default defineConfig({
         sourcemap: true,
         globals: {
           vue: 'vue',
+          tweakpane: 'Tweakpane',
+          '@tweakpane/plugin-essentials': 'TweakpanePluginEssentials',
         },
         assetFileNames: (assetInfo) => {
           if (assetInfo.name === 'style.css') return 'v-tweakpane.css';

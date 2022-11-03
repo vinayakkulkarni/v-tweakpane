@@ -7,29 +7,23 @@
 <script lang="ts">
   import { defineComponent, ref, onMounted, nextTick } from 'vue';
   import { Pane } from 'tweakpane';
+  import * as EssentialsPlugin from '@tweakpane/plugin-essentials';
   import type { Ref, PropType } from 'vue';
   import type { ButtonProps, TabParams } from '@tweakpane/core';
   import type { FolderParams } from 'tweakpane';
   import type { PaneConfig } from 'tweakpane/dist/types/pane/pane-config';
 
-  type PaneProps = {
-    title: string;
-    folders?: FolderParams[];
-    buttons?: ButtonProps[];
-    tabs?: TabParams[];
-    inputs?: { factor?: number; title?: string; color?: string }[];
-  } & PaneConfig;
-
   export default defineComponent({
     name: 'VTweakpane',
     props: {
       pane: {
-        type: Object as PropType<PaneProps>,
+        type: Object as PropType<PaneConfig>,
         default: () => {},
         required: true,
       },
     },
-    setup(props) {
+    emits: ['on-pane-created'],
+    setup(props, { emit }) {
       // Number of elements to bind the panes
       const el: Ref<HTMLElement | null> = ref(null);
 
@@ -44,27 +38,8 @@
               title: props.pane.title,
               expanded: props.pane.expanded,
             });
-            if (props.pane?.inputs && props.pane.inputs.length > 0) {
-              props.pane.inputs.forEach((input) => {
-                for (const [key] of Object.entries(input)) {
-                  // @ts-ignore
-                  pane.value?.addInput(input, key);
-                }
-              });
-            }
-            if (
-              props.pane?.folders &&
-              Object.keys(props.pane.folders).length > 0
-            ) {
-              props.pane.folders.forEach((folder) => {
-                pane.value?.addFolder(folder);
-              });
-            }
-            if (props.pane?.tabs && Object.keys(props.pane.tabs).length > 0) {
-              props.pane.tabs.forEach((tab) => {
-                pane.value?.addTab(tab);
-              });
-            }
+            pane.value.registerPlugin(EssentialsPlugin);
+            emit('on-pane-created', pane.value);
           }
         });
       });
