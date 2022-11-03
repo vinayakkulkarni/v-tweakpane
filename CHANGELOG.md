@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.1.0...v0.1.1) (2022-11-03)
+
+
+### Bug Fixes
+
+* minor housekeeping ([34fc857](https://github.com/vinayakkulkarni/v-tweakpane/commit/34fc85793edaf557d883bc367281797f552981e4))
+
+
+
 # [0.1.0](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.0.3...v0.1.0) (2022-11-02)
 
 
