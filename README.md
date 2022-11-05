@@ -1,7 +1,8 @@
 # V-Tweakpane 🎛️
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/vinayakkulkarni/v-tweakpane/ci?logo=github-actions)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/ci.yml)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/vinayakkulkarni/v-tweakpane/Ship%20js%20trigger?label=⛴%20Ship.js%20trigger)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/shipjs-trigger.yml)
+[![Continuous Integration](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/ci.yml/badge.svg)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/codeql.yml/badge.svg)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/codeql.yml)
+[![Ship js trigger](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/shipjs-trigger.yml/badge.svg)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/shipjs-trigger.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vinayakkulkarni/v-tweakpane?sort=semver&logo=github)](https://github.com/vinayakkulkarni/v-tweakpane/releases)
 [![npm](https://img.shields.io/npm/v/v-tweakpane?logo=npm)](https://www.npmjs.com/package/v-tweakpane)
 [![npm](https://img.shields.io/npm/dm/v-tweakpane?logo=npm)](http://npm-stat.com/charts.html?package=v-tweakpane)
@@ -11,8 +12,6 @@
 [![DeepScan grade](https://deepscan.io/api/teams/9055/projects/17923/branches/426854/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=17923&bid=426854)
 [![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinayakkulkarni/v-tweakpane)](https://snyk.io/test/github/vinayakkulkarni/v-tweakpane)
 [![license](https://img.shields.io/npm/l/v-tweakpane)](https://github.com/vinayakkulkarni/v-tweakpane/blob/master/LICENSE)
-[![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/vinayakkulkarni/v-tweakpane?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/v-tweakpane/alerts/)
-[![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/vinayakkulkarni/v-tweakpane?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/v-tweakpane/context:javascript)
 [![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/v-tweakpane)](https://github.com/vinayakkulkarni/v-tweakpane/graphs/contributors)
 
 [![eslint](https://img.shields.io/npm/dependency-version/v-tweakpane/dev/eslint?logo=eslint)](https://eslint.org/)
@@ -25,7 +24,7 @@
 
 ## Demo
 
-[![Edit v-image](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/v-tweakpane?file=src/App.vue)
+[![Edit v-tweakpane](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/v-tweakpane?file=src/App.vue)
 
 ---
 
