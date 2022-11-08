@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "v-github-icon": "^3.0.1",
-    "v-tweakpane": "^0.1.0",
+    "v-tweakpane": "^0.1.1",
     "vue": "^3.2.41"
   },
   "devDependencies": {
