@@ -1,3 +1,19 @@
+# [0.2.0](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.1.1...v0.2.0) (2022-11-08)
+
+
+### Bug Fixes
+
+* **deps:** bump v-github-icon from 3.0.1 to 3.0.2 in /example ([3793078](https://github.com/vinayakkulkarni/v-tweakpane/commit/379307839224c989452571a35f9a2bbbd32ffba8))
+* **deps:** bump v-tweakpane from 0.1.0 to 0.1.1 in /example ([59b0ff6](https://github.com/vinayakkulkarni/v-tweakpane/commit/59b0ff667e67052f2cf07607dacdcf54e297739e))
+* remove unused types ([68caa9f](https://github.com/vinayakkulkarni/v-tweakpane/commit/68caa9fa7a8edf177def11c07186bbd89498b905))
+
+
+### Features
+
+* add `codeql` workflow 👷‍♂️ ([15ae8ca](https://github.com/vinayakkulkarni/v-tweakpane/commit/15ae8ca28f5af17fbbcdb0304268d64f1bcffde3))
+
+
+
 ## [0.1.1](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.1.0...v0.1.1) (2022-11-03)
 
 
