@@ -9,8 +9,6 @@
   import { Pane } from 'tweakpane';
   import * as EssentialsPlugin from '@tweakpane/plugin-essentials';
   import type { Ref, PropType } from 'vue';
-  import type { ButtonProps, TabParams } from '@tweakpane/core';
-  import type { FolderParams } from 'tweakpane';
   import type { PaneConfig } from 'tweakpane/dist/types/pane/pane-config';
 
   export default defineComponent({
