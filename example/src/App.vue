@@ -1,10 +1,26 @@
 <template>
   <v-github-icon url="https://github.com/vinayakkulkarni/v-tweakpane" />
   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-    <v-tweakpane class="p-4" :pane="state.pane" />
-    <v-tweakpane class="p-4" :pane="state.pane" />
-    <v-tweakpane class="p-4" :pane="state.pane" />
-    <v-tweakpane class="p-4" :pane="state.pane" />
+    <v-tweakpane
+      class="p-4"
+      :pane="{ title: 'Simple Interval / Range Slider Example' }"
+      @on-pane-created="onPaneOneCreated"
+    />
+    <v-tweakpane
+      class="p-4"
+      :pane="{ title: 'Camera Kit Plugin Example' }"
+      @on-pane-created="onPaneTwoCreated"
+    />
+    <v-tweakpane
+      class="p-4"
+      :pane="{ title: 'Blade Example' }"
+      @on-pane-created="onPaneThreeCreated"
+    />
+    <v-tweakpane
+      class="p-4"
+      :pane="{ title: 'Colorpicker Example' }"
+      @on-pane-created="onPaneFourCreated"
+    />
   </section>
   <div class="absolute bottom-4 right-4">
     <a
@@ -23,9 +39,11 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent, ref } from 'vue';
+  import { defineComponent } from 'vue';
   import { VGithubIcon } from 'v-github-icon';
   import { VTweakpane } from 'v-tweakpane';
+  import type { Pane } from 'tweakpane';
+  import * as CamerakitPlugin from '@tweakpane/plugin-camerakit';
 
   export default defineComponent({
     components: {
@@ -33,20 +51,64 @@
       VGithubIcon,
     },
     setup() {
-      const state = ref({
-        pane: {
-          title: 'My Awesome Pane',
-          inputs: [
-            {
-              factor: 123,
-              title: 'hello',
-              color: '#0f0',
-            },
-          ],
-        },
-      });
+      const onPaneOneCreated = (pane: Pane) => {
+        const PARAMS = {
+          interval: { min: 16, max: 48 },
+        };
+        pane.addInput(PARAMS, 'interval', {
+          min: 0,
+          max: 100,
+          step: 1,
+        });
+      };
+      const onPaneTwoCreated = (pane: Pane) => {
+        pane.registerPlugin(CamerakitPlugin);
+        const PARAMS = {
+          flen: 55,
+          fnum: 1.8,
+          iso: 100,
+        };
+        pane.addInput(PARAMS, 'flen', {
+          view: 'cameraring',
+          series: 0,
+          unit: { pixels: 50, ticks: 10, value: 0.2 },
+          min: 1,
+          step: 0.02,
+        });
+        pane.addInput(PARAMS, 'fnum', {
+          view: 'cameraring',
+          series: 1,
+          unit: { ticks: 10, pixels: 40, value: 0.2 },
+          wide: true,
+          min: 1.4,
+          step: 0.02,
+        });
+        pane.addInput(PARAMS, 'iso', {
+          view: 'camerawheel',
+          amount: 100,
+        });
+      };
+      const onPaneThreeCreated = (pane: Pane) => {
+        pane.addBlade({
+          view: 'text',
+          label: 'name',
+          parse: (v: number) => String(v),
+          value: 'sketch-01',
+        });
+      };
+      const onPaneFourCreated = (pane: Pane) => {
+        const PARAMS = {
+          background: { r: 255, g: 0, b: 55 },
+          tint: { r: 0, g: 255, b: 214, a: 0.5 },
+        };
+        pane.addInput(PARAMS, 'background');
+        pane.addInput(PARAMS, 'tint');
+      };
       return {
-        state,
+        onPaneOneCreated,
+        onPaneTwoCreated,
+        onPaneThreeCreated,
+        onPaneFourCreated,
       };
     },
   });

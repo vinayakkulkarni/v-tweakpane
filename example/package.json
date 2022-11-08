@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tweakpane/plugin-camerakit": "^0.2.2",
+    "@tweakpane/plugin-essentials": "^0.1.5",
+    "tweakpane": "^3.1.0",
     "v-github-icon": "^3.0.2",
-    "v-tweakpane": "^0.1.1",
+    "v-tweakpane": "^0.2.0",
     "vue": "^3.2.41"
   },
   "devDependencies": {
