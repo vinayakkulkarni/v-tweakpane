@@ -79,7 +79,7 @@ app.component('VTweakpane', VTweakpane);
 
 Or use locally
 
-```js
+```html
 // component.vue
 <script lang="ts">
 import { defineComponent } from 'vue';
