@@ -55,7 +55,7 @@
     "@tweakpane/core": "^1.1.4",
     "@types/node": "^18.13.0",
     "@types/uuid": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.51.0",
     "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
     "@vitejs/plugin-vue": "^3.2.0",
