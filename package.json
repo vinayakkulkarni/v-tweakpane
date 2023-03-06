@@ -52,7 +52,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.4",
-    "@tweakpane/core": "^1.1.4",
+    "@tweakpane/core": "^1.1.5",
     "@types/node": "^18.14.4",
     "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
