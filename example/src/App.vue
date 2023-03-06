@@ -42,7 +42,6 @@
   import { defineComponent } from 'vue';
   import { VGithubIcon } from 'v-github-icon';
   import { VTweakpane } from 'v-tweakpane';
-  import type { Pane } from 'tweakpane';
   import * as CamerakitPlugin from '@tweakpane/plugin-camerakit';
 
   export default defineComponent({
@@ -51,7 +50,7 @@
       VGithubIcon,
     },
     setup() {
-      const onPaneOneCreated = (pane: Pane) => {
+      const onPaneOneCreated = (pane: any) => {
         const PARAMS = {
           interval: { min: 16, max: 48 },
         };
@@ -61,7 +60,7 @@
           step: 1,
         });
       };
-      const onPaneTwoCreated = (pane: Pane) => {
+      const onPaneTwoCreated = (pane: any) => {
         pane.registerPlugin(CamerakitPlugin);
         const PARAMS = {
           flen: 55,
@@ -88,7 +87,7 @@
           amount: 100,
         });
       };
-      const onPaneThreeCreated = (pane: Pane) => {
+      const onPaneThreeCreated = (pane: any) => {
         pane.addBlade({
           view: 'text',
           label: 'name',
@@ -96,7 +95,7 @@
           value: 'sketch-01',
         });
       };
-      const onPaneFourCreated = (pane: Pane) => {
+      const onPaneFourCreated = (pane: any) => {
         const PARAMS = {
           background: { r: 255, g: 0, b: 55 },
           tint: { r: 0, g: 255, b: 214, a: 0.5 },
