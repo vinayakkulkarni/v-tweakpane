@@ -50,7 +50,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.1",
+    "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.0",
     "@tweakpane/core": "^1.1.6",
     "@types/node": "^18.15.11",
