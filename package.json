@@ -42,10 +42,10 @@
   },
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.1.8",
-    "tweakpane": "^3.1.8"
+    "tweakpane": "^3.1.9"
   },
   "peerDependencies": {
-    "tweakpane": "^3.1.8",
+    "tweakpane": "^3.1.9",
     "@tweakpane/plugin-essentials": "^0.1.8",
     "vue": "^3.2.47"
   },
