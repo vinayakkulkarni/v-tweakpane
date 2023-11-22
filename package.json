@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.3",
     "@tweakpane/core": "^2.0.1",
     "@types/node": "^20.9.4",
     "@types/uuid": "^9.0.7",
