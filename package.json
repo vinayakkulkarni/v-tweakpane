@@ -41,12 +41,12 @@
     "release:auto": "shipjs prepare --yes"
   },
   "dependencies": {
-    "@tweakpane/plugin-essentials": "^0.2.0",
+    "@tweakpane/plugin-essentials": "^0.2.1",
     "tweakpane": "^4.0.2"
   },
   "peerDependencies": {
     "tweakpane": "^4.0.2",
-    "@tweakpane/plugin-essentials": "^0.2.0",
+    "@tweakpane/plugin-essentials": "^0.2.1",
     "vue": "^3.3.12"
   },
   "devDependencies": {
