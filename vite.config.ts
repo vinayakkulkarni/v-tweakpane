@@ -32,7 +32,6 @@ export default defineConfig({
         exports: 'named',
         banner,
         strict: true,
-        sourcemap: true,
         globals: {
           vue: 'vue',
           tweakpane: 'Tweakpane',
