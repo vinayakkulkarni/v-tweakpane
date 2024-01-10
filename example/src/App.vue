@@ -1,11 +1,9 @@
 <script setup lang="ts">
   import { VGithubIcon } from 'v-github-icon';
   import { VTweakpane } from 'v-tweakpane';
-  import type { Pane } from 'tweakpane';
 
-  const onPaneOneCreated = (pane: unknown) => {
-    const p = pane as Pane;
-    const tab = p.addTab({
+  const onPaneOneCreated = (pane: any) => {
+    const tab = pane.addTab({
       pages: [{ title: 'Parameters' }, { title: 'Advanced' }],
     });
     const PARAMS_1 = {
@@ -31,39 +29,39 @@
       expanded: true,
     });
   };
-  const onPaneTwoCreated = (pane: unknown) => {
-    const p = pane as Pane;
+  const onPaneTwoCreated = (pane: any) => {
     const PARAMS = {
       scale: 25,
     };
 
     const scales = [10, 20, 25, 50, 75, 100];
-    p.addBinding(PARAMS, 'scale', {
-      view: 'radiogrid',
-      groupName: 'scale',
-      size: [3, 2],
-      cells: (x: number, y: number) => ({
-        title: `${scales[y * 3 + x]}%`,
-        value: scales[y * 3 + x],
-      }),
+    pane
+      .addBinding(PARAMS, 'scale', {
+        view: 'radiogrid',
+        groupName: 'scale',
+        size: [3, 2],
+        cells: (x: number, y: number) => ({
+          title: `${scales[y * 3 + x]}%`,
+          value: scales[y * 3 + x],
+        }),
 
-      label: 'radiogrid',
-    }).on('change', (ev: any) => {
-      console.log(ev);
-    });
+        label: 'radiogrid',
+      })
+      .on('change', (ev: any) => {
+        console.log(ev);
+      });
   };
-  const onPaneThreeCreated = (pane: unknown) => {
-    const p = pane as Pane;
-    p.addBlade({
+  const onPaneThreeCreated = (pane: any) => {
+    pane.addBlade({
       view: 'text',
       label: 'name',
       parse: (v: number) => String(v),
       value: 'sketch-01',
     });
-    p.addBlade({
+    pane.addBlade({
       view: 'separator',
     });
-    p.addBlade({
+    pane.addBlade({
       view: 'slider',
       label: 'brightness',
       min: 0,
@@ -71,14 +69,13 @@
       value: 0.5,
     });
   };
-  const onPaneFourCreated = (pane: unknown) => {
-    const p = pane as Pane;
+  const onPaneFourCreated = (pane: any) => {
     const PARAMS = {
       background: { r: 255, g: 0, b: 55 },
       tint: { r: 0, g: 255, b: 214, a: 0.5 },
     };
-    p.addBinding(PARAMS, 'background');
-    p.addBinding(PARAMS, 'tint');
+    pane.addBinding(PARAMS, 'background');
+    pane.addBinding(PARAMS, 'tint');
   };
 </script>
 
