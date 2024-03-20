@@ -1,3 +1,12 @@
+## [0.3.2](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.1...v0.3.2) (2024-03-20)
+
+
+### Bug Fixes
+
+* **jsr:** setup bun & build dist ([ef418e2](https://github.com/vinayakkulkarni/v-tweakpane/commit/ef418e2d6c918080f7c12d73c69e5a2e8d3e9d1e))
+
+
+
 ## [0.3.1](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.0...v0.3.1) (2024-03-20)
 
 

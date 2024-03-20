@@ -1,6 +1,6 @@
 {
   "name": "@vinayakkulkarni/v-tweakpane",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "exports": "./dist/v-tweakpane.js",
   "publish": {
     "exclude": [
