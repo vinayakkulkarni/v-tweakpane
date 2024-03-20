@@ -20,14 +20,18 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
-      - name: Setup bun env 🐰
-        uses: oven-sh/setup-bun@v1
+      - name: Setup node environment 📦
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          check-latest: true
+          cache: 'npm'
 
       - name: Install dependencies 🚀
-        run: bun install --frozen-lockfile
+        run: npm ci --prefer-offline --no-audit
 
       - name: Trigger a release (NPM) 🥳
-        run: bunx shipjs trigger
+        run: npx shipjs trigger
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
@@ -39,7 +43,7 @@ jobs:
     needs: publish-to-npm
     permissions:
       contents: read
-      id-token: write # The OIDC ID token is used for authentication with JSR.
+      id-token: write
     steps:
       - name: Checkout code 🛎
         uses: actions/checkout@v4
