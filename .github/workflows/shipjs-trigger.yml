@@ -50,5 +50,17 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
+
+      - name: Setup bun env 🐰
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies 🚀
+        run: bun install
+
+      - name: Build the package 🎉
+        run: bun run build
+
       - name: Trigger a release (JSR) 🥳
         run: bunx jsr publish
