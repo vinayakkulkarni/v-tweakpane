@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.0...v0.3.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* **jsr:** update as per docs ([8b40dca](https://github.com/vinayakkulkarni/v-tweakpane/commit/8b40dca9792829986a452088461caaaac5b3320d))
+
+
+
 # [0.3.0](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.2.0...v0.3.0) (2024-03-20)
 
 
