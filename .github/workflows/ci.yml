@@ -26,7 +26,7 @@ jobs:
       - name: Setup bun env 🐰
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: 1.0.25+a8ff7be64
+          bun-version: latest
 
       - name: Install dependencies 🚀
         run: bun install
