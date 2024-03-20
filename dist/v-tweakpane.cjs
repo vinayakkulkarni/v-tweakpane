@@ -1,6 +1,0 @@
-"use strict";/*!
-* v-tweakpane v0.2.0
-* (c) 2024 Vinayak Kulkarni
-* @license MIT
-*/Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const n=require("vue"),u=require("tweakpane"),i=require("@tweakpane/plugin-essentials");function p(e){const a=Object.create(null,{[Symbol.toStringTag]:{value:"Module"}});if(e){for(const t in e)if(t!=="default"){const l=Object.getOwnPropertyDescriptor(e,t);Object.defineProperty(a,t,l.get?l:{enumerable:!0,get:()=>e[t]})}}return a.default=e,Object.freeze(a)}const f=p(i),d={class:"w-full h-full"},_=n.defineComponent({__name:"VTweakpane",props:{pane:{}},emits:["on-pane-created"],setup(e,{emit:a}){const t=e,l=a,o=n.ref(null),r=n.ref(null);return n.onMounted(()=>{n.nextTick(()=>{o.value instanceof Element&&(r.value=new u.Pane({container:o.value,title:t.pane.title,expanded:t.pane.expanded}),r.value.registerPlugin(f),l("on-pane-created",r.value))})}),(k,b)=>(n.openBlock(),n.createElementBlock("main",d,[n.createElementVNode("div",{ref_key:"el",ref:o},null,512)]))}}),m=(e,a)=>{const t=e.__vccOpts||e;for(const[l,o]of a)t[l]=o;return t},s=m(_,[["__scopeId","data-v-29b6d810"]]);let c=!1;const v=e=>{c||(e.component("VTweakpane",s),c=!0)},g=v;exports.VTweakpane=s;exports.default=g;
-//# sourceMappingURL=v-tweakpane.cjs.map
