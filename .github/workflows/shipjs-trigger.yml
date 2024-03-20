@@ -15,11 +15,16 @@ jobs:
           fetch-depth: 0
           ref: main
 
+      - name: Setup GitHub Actor
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
       - name: Setup bun env 🐰
         uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies 🚀
-        run: bun install
+        run: bun install --frozen-lockfile
 
       - name: Trigger a release (NPM) 🥳
         run: bunx shipjs trigger
