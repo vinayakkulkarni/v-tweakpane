@@ -23,7 +23,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Setup node env 📦
+      - name: Setup bun env 🐰
         uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies 🚀
