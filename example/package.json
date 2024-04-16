@@ -12,16 +12,16 @@
     "@tweakpane/plugin-camerakit": "^0.3.0",
     "@tweakpane/plugin-essentials": "^0.2.1",
     "tweakpane": "^4.0.3",
-    "unocss": "^0.58.6",
+    "unocss": "^0.59.2",
     "v-github-icon": "^3.2.1",
     "v-tweakpane": "^0.3.2",
-    "vue": "^3.4.21"
+    "vue": "^3.4.22"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "sass": "^1.72.0",
+    "sass": "^1.75.0",
     "typescript": "^5.4.5",
-    "vite": "^5.1.6",
+    "vite": "^5.2.8",
     "vue-tsc": "^2.0.13"
   }
 }
