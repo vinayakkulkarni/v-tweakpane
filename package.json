@@ -80,7 +80,7 @@
     "uuid": "^9.0.1",
     "vite": "^5.2.11",
     "vue": "^3.4.23",
-    "vue-tsc": "^2.0.13"
+    "vue-tsc": "^2.0.16"
   },
   "keywords": [
     "tweakpane",
