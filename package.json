@@ -69,7 +69,7 @@
     "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "postcss-html": "^1.6.0",
+    "postcss-html": "^1.7.0",
     "prettier": "^3.2.5",
     "sass": "^1.77.0",
     "shipjs": "^0.26.3",
