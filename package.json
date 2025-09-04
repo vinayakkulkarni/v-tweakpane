@@ -68,7 +68,7 @@
     "eslint-plugin-storybook": "^9.1.4",
     "eslint-plugin-vue": "^9.32.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "postcss-html": "^1.8.0",
     "prettier": "^3.6.2",
     "sass": "^1.91.0",
