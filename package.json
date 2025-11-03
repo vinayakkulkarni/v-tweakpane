@@ -56,7 +56,7 @@
     "@types/node": "^24.9.2",
     "@types/uuid": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.3",
     "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/runtime-dom": "^3.5.22",
