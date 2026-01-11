@@ -62,7 +62,7 @@
     "@vue/runtime-dom": "^3.5.26",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-jsdoc": "^61.7.1",
+    "eslint-plugin-jsdoc": "^62.0.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-storybook": "^10.1.11",
