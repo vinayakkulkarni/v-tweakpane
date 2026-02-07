@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref, defineEmits, defineProps, onMounted, nextTick } from 'vue';
+  import { ref, onMounted, nextTick } from 'vue';
   import { Pane } from 'tweakpane';
   import * as EssentialsPlugin from '@tweakpane/plugin-essentials';
   import type { Ref } from 'vue';
