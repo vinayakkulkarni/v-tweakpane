@@ -4,8 +4,8 @@
   "description": "Tweakpane for Vue",
   "exports": {
     ".": {
-      "import": "./dist/v-tweakpane.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/v-tweakpane.js"
     },
     "./dist/v-tweakpane.css": "./dist/v-tweakpane.css"
   },
