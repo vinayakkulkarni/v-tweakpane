@@ -7,6 +7,33 @@
 
 
 
+## [0.3.4](https://github.com/vinayakkulkarni/v-tweakpane/compare/v-tweakpane-v0.3.3...v-tweakpane-v0.3.4) (2026-02-26)
+
+
+### Bug Fixes
+
+* **deps:** bump dependabot/fetch-metadata in the actions-minor group ([#2432](https://github.com/vinayakkulkarni/v-tweakpane/issues/2432)) ([3bf76f8](https://github.com/vinayakkulkarni/v-tweakpane/commit/3bf76f881d2c4e2df4d8366c14ef12d49cb10fcf))
+
+
+### Miscellaneous
+
+* **deps-dev:** update @types/node requirement from ^25.2.2 to ^25.2.3 ([399b55d](https://github.com/vinayakkulkarni/v-tweakpane/commit/399b55d9beb5f2c6b9078f4280dde7c4cd247a67))
+* **deps-dev:** update @types/node requirement from ^25.2.2 to ^25.2.3 ([c411a8a](https://github.com/vinayakkulkarni/v-tweakpane/commit/c411a8a09b67175f3a780e8c5726f840e55173de))
+* **deps-dev:** update @types/node requirement from ^25.2.3 to ^25.3.0 ([5110c16](https://github.com/vinayakkulkarni/v-tweakpane/commit/5110c167ccd8a2cea36f540e391ead5545137e14))
+* **deps-dev:** update @types/node requirement from ^25.2.3 to ^25.3.0 ([e1c7899](https://github.com/vinayakkulkarni/v-tweakpane/commit/e1c7899b1a2b5c9318a443b90e71081d9135bffd))
+* **deps-dev:** update @types/node requirement from ^25.3.0 to ^25.3.1 ([5d73b0e](https://github.com/vinayakkulkarni/v-tweakpane/commit/5d73b0e4fe52354e9492850037081425d5246e00))
+* **deps-dev:** update @types/node requirement from ^25.3.0 to ^25.3.1 ([30c29cb](https://github.com/vinayakkulkarni/v-tweakpane/commit/30c29cb5b1378e7be51c825e97acce917bf32746))
+* **deps-dev:** update @vue/runtime-dom requirement ([ccf6eb4](https://github.com/vinayakkulkarni/v-tweakpane/commit/ccf6eb43e2269c3e28b32c79f1fcd783bc8e8911))
+* **deps-dev:** update @vue/runtime-dom requirement ([30639b8](https://github.com/vinayakkulkarni/v-tweakpane/commit/30639b844103a6a8ffc74d2088e98df0d2f4a9af))
+* **deps-dev:** update @vue/runtime-dom requirement from ^3.5.27 to ^3.5.28 ([518dcaa](https://github.com/vinayakkulkarni/v-tweakpane/commit/518dcaa993c3ffe6c40bb088b5a77291501665c2))
+* **deps-dev:** update @vue/runtime-dom requirement from ^3.5.28 to ^3.5.29 ([9dc6540](https://github.com/vinayakkulkarni/v-tweakpane/commit/9dc6540a2260d4cce5b79e0f3e082d10eba5120e))
+* **deps-dev:** update vue requirement from ^3.5.27 to ^3.5.28 ([f4ba16a](https://github.com/vinayakkulkarni/v-tweakpane/commit/f4ba16aae432a680f6e84ca34f360ec6ed5f7e44))
+* **deps-dev:** update vue requirement from ^3.5.27 to ^3.5.28 ([7a97f11](https://github.com/vinayakkulkarni/v-tweakpane/commit/7a97f113a58358ac0ff2320c5de48d1ceedc19a2))
+* **deps-dev:** update vue requirement from ^3.5.28 to ^3.5.29 ([62fb7f4](https://github.com/vinayakkulkarni/v-tweakpane/commit/62fb7f4f048494be1d6189e114fc69dea2c04ab8))
+* **deps-dev:** update vue requirement from ^3.5.28 to ^3.5.29 ([e62e32e](https://github.com/vinayakkulkarni/v-tweakpane/commit/e62e32e409dd5458ae32ebcdb53f2dafb056b246))
+* **deps-dev:** update vue-tsc requirement from ^3.2.4 to ^3.2.5 ([3125394](https://github.com/vinayakkulkarni/v-tweakpane/commit/31253947efaa6b101bc01c818663199f6edbefee))
+* **deps-dev:** update vue-tsc requirement from ^3.2.4 to ^3.2.5 ([e915b68](https://github.com/vinayakkulkarni/v-tweakpane/commit/e915b68cd1bef3cc894cb3d7a77bb64b70092536))
+
 ## [0.3.3](https://github.com/vinayakkulkarni/v-tweakpane/compare/v-tweakpane-v0.3.2...v-tweakpane-v0.3.3) (2026-02-09)
 
 
