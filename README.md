@@ -30,7 +30,7 @@
 
 ## Features
 
-- Power of [Vue 3](https://vuejs.org) with awesomeness of [Tweakpane](https://cocopon.github.io/tweakpane/)!
+- Power of [Vue 3](https://vuejs.org) with awesomeness of [Tweakpane](https://tweakpane.github.io/docs/)!
 - Built from scratch using [TypeScript](https://www.typescriptlang.org)
 
 ---
