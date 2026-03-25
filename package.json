@@ -39,7 +39,7 @@
     "@types/node": "^25.5.0",
     "@types/uuid": "^11.0.0",
     "@vitejs/plugin-vue": "^6.0.5",
-    "@vue/runtime-dom": "^3.5.30",
+    "@vue/runtime-dom": "^3.5.31",
     "husky": "latest",
     "is-ci": "latest",
     "lint-staged": "latest",
