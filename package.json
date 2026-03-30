@@ -4,10 +4,10 @@
   "description": "Tweakpane for Vue",
   "exports": {
     ".": {
-      "import": "./dist/v-tweakpane.js",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./dist/v-tweakpane.css": "./dist/v-tweakpane.css"
+    "./dist/index.css": "./dist/index.css"
   },
   "files": [
     "dist"
@@ -15,11 +15,11 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "lint": "oxlint --config .oxlintrc.jsonc",
-    "lint:fix": "oxlint --fix --config .oxlintrc.jsonc",
-    "format": "oxfmt --config .oxfmtrc.jsonc .",
-    "format:check": "oxfmt --check --config .oxfmtrc.jsonc .",
-    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check",
+    "build": "vp build && vue-tsc --declaration --emitDeclarationOnly",
     "test": "echo 'test!'",
     "prepare": "is-ci || husky"
   },
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@tsdown/css": "^0.21.6",
     "@tweakpane/core": "^2.0.5",
     "@types/node": "^25.5.0",
     "@types/uuid": "^11.0.0",
@@ -43,11 +44,12 @@
     "husky": "latest",
     "is-ci": "latest",
     "lint-staged": "latest",
-    "oxlint": "latest",
     "sass": "^1.98.0",
     "typescript": "^6.0.2",
+    "unplugin-vue": "^7.1.1",
     "uuid": "^13.0.0",
     "vite": "^8.0.3",
+    "vite-plus": "^0.1.14",
     "vue": "^3.5.31",
     "vue-tsc": "^3.2.6"
   },
@@ -78,5 +80,6 @@
   "bugs": {
     "url": "https://github.com/vinayakkulkarni/v-tweakpane/issues"
   },
-  "homepage": "https://github.com/vinayakkulkarni/v-tweakpane#readme"
+  "homepage": "https://github.com/vinayakkulkarni/v-tweakpane#readme",
+  "packageManager": "bun@1.3.11"
 }
