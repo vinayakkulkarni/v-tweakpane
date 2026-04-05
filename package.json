@@ -37,7 +37,7 @@
     "@commitlint/config-conventional": "latest",
     "@tsdown/css": "^0.21.7",
     "@tweakpane/core": "^2.0.5",
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "@types/uuid": "^11.0.0",
     "@vitejs/plugin-vue": "^6.0.5",
     "@vue/runtime-dom": "^3.5.31",
