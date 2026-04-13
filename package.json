@@ -35,7 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@tsdown/css": "^0.21.7",
+    "@tsdown/css": "^0.21.8",
     "@tweakpane/core": "^2.0.5",
     "@types/node": "^25.6.0",
     "@types/uuid": "^11.0.0",
