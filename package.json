@@ -1,7 +1,36 @@
 {
   "name": "v-tweakpane",
   "version": "0.3.3",
+  "private": false,
   "description": "Tweakpane for Vue",
+  "keywords": [
+    "Vue tweakpane",
+    "tweakpane",
+    "v-tweakpane",
+    "vue-tweakpane.js"
+  ],
+  "homepage": "https://github.com/vinayakkulkarni/v-tweakpane#readme",
+  "bugs": {
+    "url": "https://github.com/vinayakkulkarni/v-tweakpane/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vinayak Kulkarni",
+    "email": "inbox.vinayak@gmail.com",
+    "url": "https://vinayakkulkarni.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinayakkulkarni/v-tweakpane.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -9,11 +38,10 @@
     },
     "./dist/index.css": "./dist/index.css"
   },
-  "files": [
-    "dist"
-  ],
-  "types": "./dist/index.d.ts",
-  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "lint": "vp lint",
     "lint:fix": "vp lint --fix",
@@ -26,11 +54,6 @@
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.2.1",
     "tweakpane": "^4.0.5"
-  },
-  "peerDependencies": {
-    "tweakpane": "^4.0.4",
-    "@tweakpane/plugin-essentials": "^0.2.1",
-    "vue": "^3.4.7"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
@@ -53,35 +76,11 @@
     "vue": "^3.5.34",
     "vue-tsc": "^3.2.9"
   },
-  "keywords": [
-    "tweakpane",
-    "Vue tweakpane",
-    "v-tweakpane",
-    "vue-tweakpane.js"
-  ],
-  "author": {
-    "name": "Vinayak Kulkarni",
-    "email": "inbox.vinayak@gmail.com",
-    "url": "https://vinayakkulkarni.dev"
+  "peerDependencies": {
+    "@tweakpane/plugin-essentials": "^0.2.1",
+    "tweakpane": "^4.0.4",
+    "vue": "^3.4.7"
   },
-  "license": "MIT",
-  "private": false,
-  "sideEffects": [
-    "*.css"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  },
-  "repository": {
-    "url": "git+https://github.com/vinayakkulkarni/v-tweakpane.git",
-    "type": "git"
-  },
-  "bugs": {
-    "url": "https://github.com/vinayakkulkarni/v-tweakpane/issues"
-  },
-  "homepage": "https://github.com/vinayakkulkarni/v-tweakpane#readme",
-  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -92,5 +91,6 @@
       "name": "node",
       "version": ">=24"
     }
-  }
+  },
+  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499"
 }
