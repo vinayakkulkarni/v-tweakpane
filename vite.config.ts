@@ -1,26 +1,19 @@
-import vue from '@vitejs/plugin-vue';
-import { resolve } from 'path';
+import Vue from 'unplugin-vue/rolldown';
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
-  plugins: [vue()],
-  build: {
-    target: 'esnext',
+  pack: {
+    entry: ['src/index.ts'],
+    format: ['esm'],
+    platform: 'neutral',
     sourcemap: true,
-    lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      formats: ['es'],
-      fileName: 'index',
+    dts: { vue: true },
+    plugins: [Vue({ isProduction: true })],
+    deps: {
+      neverBundle: ['vue', 'tweakpane', '@tweakpane/plugin-essentials'],
     },
-    rollupOptions: {
-      external: ['vue', 'tweakpane', '@tweakpane/plugin-essentials'],
-      output: {
-        exports: 'named',
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') return 'index.css';
-          return assetInfo.name || 'index.css';
-        },
-      },
+    css: {
+      fileName: 'index.css',
     },
   },
   fmt: {

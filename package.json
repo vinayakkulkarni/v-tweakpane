@@ -19,7 +19,7 @@
     "lint:fix": "vp lint --fix",
     "format": "vp fmt",
     "format:check": "vp fmt --check",
-    "build": "vp build && vue-tsc --declaration --emitDeclarationOnly",
+    "build": "vp pack",
     "test": "echo 'test!'",
     "prepare": "is-ci || husky"
   },
