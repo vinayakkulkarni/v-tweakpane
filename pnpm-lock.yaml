@@ -30,12 +30,6 @@ importers:
       '@types/node':
         specifier: ^25.8.0
         version: 25.8.0
-      '@types/uuid':
-        specifier: ^11.0.0
-        version: 11.0.0
-      '@vue/runtime-dom':
-        specifier: ^3.5.34
-        version: 3.5.34
       husky:
         specifier: latest
         version: 9.1.7
@@ -54,9 +48,6 @@ importers:
       unplugin-vue:
         specifier: ^7.2.0
         version: 7.2.0(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(vue@3.5.34(typescript@6.0.3))(yaml@2.9.0)
-      uuid:
-        specifier: ^14.0.0
-        version: 14.0.0
       vite-plus:
         specifier: ^0.1.21
         version: 0.1.21(@tsdown/css@0.22.0)(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(typescript@6.0.3)(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(yaml@2.9.0)
@@ -1252,10 +1243,6 @@ packages:
 
   '@types/node@25.8.0':
     resolution: {integrity: sha512-TCFSk8IZh+iLX1xtksoBVtdmgL+1IX0fC9BeU4QqFSuNdN/K+HUlhqOzEmSYYpZUVsLYcPqc9KX+60iDuninSQ==}
-
-  '@types/uuid@11.0.0':
-    resolution: {integrity: sha512-HVyk8nj2m+jcFRNazzqyVKiZezyhDKrGUA3jlEcg/nZ6Ms+qHwocba1Y/AaVaznJTAM9xpdFSh+ptbNrhOGvZA==}
-    deprecated: This is a stub types definition. uuid provides its own type definitions, so you do not need this installed.
 
   '@unocss/astro@0.59.4':
     resolution: {integrity: sha512-DU3OR5MMR1Uvvec4/wB9EetDASHRg19Moy6z/MiIhn8JWJ0QzWYgSeJcfUX8exomMYv6WUEQJL+CyLI34Wmn8w==}
@@ -2487,10 +2474,6 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  uuid@14.0.0:
-    resolution: {integrity: sha512-Qo+uWgilfSmAhXCMav1uYFynlQO7fMFiMVZsQqZRMIXp0O7rR7qjkj+cPvBHLgBqi960QCoo/PH2/6ZtVqKvrg==}
-    hasBin: true
-
   v-github-icon@3.3.0:
     resolution: {integrity: sha512-IDlFAT3dGXOqI5DplicZ+rWzkashskwFBlAt+EoGVNoW70vfo9+awXOE3Z9YTKTw02TpafqvBsJ0wOlnIFoLcQ==}
     peerDependencies:
@@ -3542,10 +3525,6 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@types/uuid@11.0.0':
-    dependencies:
-      uuid: 14.0.0
-
   '@unocss/astro@0.59.4(rollup@4.60.4)(vite@6.4.2(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@unocss/core': 0.59.4
@@ -3931,7 +3910,7 @@ snapshots:
 
   ast-kit@3.0.0-beta.1:
     dependencies:
-      '@babel/parser': 8.0.0-rc.5
+      '@babel/parser': 8.0.0-rc.4
       estree-walker: 3.0.3
       pathe: 2.0.3
 
@@ -4805,8 +4784,6 @@ snapshots:
       browserslist: 4.28.2
       escalade: 3.2.0
       picocolors: 1.1.1
-
-  uuid@14.0.0: {}
 
   v-github-icon@3.3.0(vue@3.5.34(typescript@5.9.3)):
     dependencies:

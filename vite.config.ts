@@ -35,7 +35,7 @@ export default defineConfig({
       'coverage',
       '*.min.js',
       '*.min.css',
-      'bun.lock',
+      'pnpm-lock.yaml',
       '**/CHANGELOG.md',
       '**/jsr.json',
     ],
