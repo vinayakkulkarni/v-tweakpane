@@ -12,7 +12,7 @@
     "@tweakpane/plugin-camerakit": "^0.3.0",
     "@tweakpane/plugin-essentials": "^0.2.1",
     "tweakpane": "^4.0.3",
-    "unocss": "^0.59.4",
+    "unocss": "^66.6.8",
     "v-github-icon": "^3.2.1",
     "v-tweakpane": "^0.3.2",
     "vue": "^3.4.23"
