@@ -1,17 +1,22 @@
 # V-Tweakpane 🎛️
 
-[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/v-tweakpane/pipeline.yml?logo=github-actions)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/pipeline.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vinayakkulkarni/v-tweakpane?sort=semver&logo=github)](https://github.com/vinayakkulkarni/v-tweakpane/releases)
-[![npm](https://img.shields.io/npm/v/v-tweakpane?logo=npm)](https://www.npmjs.com/package/v-tweakpane)
-[![npm](https://img.shields.io/npm/dm/v-tweakpane?logo=npm)](http://npm-stat.com/charts.html?package=v-tweakpane)
-[![npm (downloads)](https://img.shields.io/npm/dm/v-tweakpane.svg)](https://npm-stat.com/charts.html?package=v-tweakpane)
-[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/v-tweakpane/latest)](https://bundlephobia.com/package/v-tweakpane@latest)
-[![npm type definitions](https://img.shields.io/npm/types/v-tweakpane)](https://github.com/vinayakkulkarni/v-tweakpane/blob/master/package.json)
-[![license](https://img.shields.io/npm/l/v-tweakpane)](https://github.com/vinayakkulkarni/v-tweakpane/blob/master/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/v-tweakpane)](https://github.com/vinayakkulkarni/v-tweakpane/graphs/contributors)
+<!-- Badges -->
 
-[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-tweakpane/dev/vite-plus?logo=vite)](https://github.com/voidzero-dev/vite-plus)
-[![typescript](https://img.shields.io/npm/dependency-version/v-tweakpane/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
+[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/v-tweakpane/pipeline.yml?branch=main&logo=github-actions&label=pipeline)](https://github.com/vinayakkulkarni/v-tweakpane/actions/workflows/pipeline.yml)
+[![GitHub release](https://img.shields.io/github/v/release/vinayakkulkarni/v-tweakpane?sort=semver&logo=github&label=release)](https://github.com/vinayakkulkarni/v-tweakpane/releases)
+[![npm](https://img.shields.io/npm/v/v-tweakpane?logo=npm&label=npm)](https://www.npmjs.com/package/v-tweakpane)
+[![JSR](https://img.shields.io/jsr/v/@vinayakkulkarni/v-tweakpane?logo=jsr&label=jsr)](https://jsr.io/@vinayakkulkarni/v-tweakpane)
+[![npm downloads](https://img.shields.io/npm/dm/v-tweakpane?logo=npm&label=downloads)](http://npm-stat.com/charts.html?package=v-tweakpane)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/v-tweakpane?label=size)](https://bundlephobia.com/package/v-tweakpane@latest)
+[![types](https://img.shields.io/npm/types/v-tweakpane?logo=typescript&label=types)](https://github.com/vinayakkulkarni/v-tweakpane/blob/main/package.json)
+[![License](https://img.shields.io/github/license/vinayakkulkarni/v-tweakpane?logo=github&label=license)](./LICENSE)
+
+[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-tweakpane/dev/vite-plus?logo=vite&label=vite-plus)](https://github.com/voidzero-dev/vite-plus)
+[![typescript](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-tweakpane/dev/typescript?logo=TypeScript&label=typescript)](https://www.typescriptlang.org/)
+[![pnpm](https://img.shields.io/github/package-json/packageManager/vinayakkulkarni/v-tweakpane?label=pnpm&logo=pnpm)](https://pnpm.io/)
+[![node](https://img.shields.io/node/v/v-tweakpane?logo=node.js&label=node)](https://nodejs.org/)
+
+<!-- End Badges -->
 
 ---
 
@@ -44,17 +49,17 @@
 ### Installation
 
 ```sh
-npm i tweakpane v-tweakpane @tweakpane/plugin-essentials
+pnpm add tweakpane v-tweakpane @tweakpane/plugin-essentials
 ```
 
 ### Build Setup
 
 ```bash
 # install dependencies
-$ npm install
+$ pnpm install
 
 # package lib
-$ npm run build
+$ pnpm run build
 ```
 
 ### Usage

@@ -2,7 +2,7 @@
   "name": "v-tweakpane",
   "version": "0.3.3",
   "private": false,
-  "description": "Tweakpane for Vue",
+  "description": "Vue 3 wrapper for Tweakpane — build floating GUI panels for tweaking values, debugging generative art, and design tools.",
   "keywords": [
     "Vue tweakpane",
     "tweakpane",

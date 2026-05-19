@@ -6,5 +6,6 @@
     "exclude": [
       "!dist"
     ]
-  }
+  },
+  "description": "Vue 3 wrapper for Tweakpane \u2014 build floating GUI panels for tweaking values, debugging generative art, and design tools."
 }
