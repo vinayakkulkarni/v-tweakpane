@@ -121,5 +121,5 @@
 
 <style>
   @import 'v-github-icon/dist/v-github-icon.css';
-  @import 'v-tweakpane/dist/v-tweakpane.css';
+  @import 'v-tweakpane/dist/index.css';
 </style>

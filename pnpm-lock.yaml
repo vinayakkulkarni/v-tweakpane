@@ -73,8 +73,8 @@ importers:
         specifier: ^3.2.1
         version: 3.3.0(vue@3.5.34(typescript@6.0.3))
       v-tweakpane:
-        specifier: ^0.3.2
-        version: 0.3.2(@tweakpane/plugin-essentials@0.2.1(tweakpane@4.0.5))(tweakpane@4.0.5)(vue@3.5.34(typescript@6.0.3))
+        specifier: link:..
+        version: link:..
       vue:
         specifier: ^3.4.23
         version: 3.5.34(typescript@6.0.3)
@@ -1769,14 +1769,6 @@ packages:
     peerDependencies:
       vue: ^3.5.27
 
-  v-tweakpane@0.3.2:
-    resolution: {integrity: sha512-i1rzqM0w9xkQ/biGDDKJMLu59WacGBUg4Uw8oK/9RpZuJILbu2GBX4+HgV7iFctMwetje1ZU3b9XSAXo5BPRBg==}
-    engines: {node: '>=16.0.0', npm: '>=8.19.2'}
-    peerDependencies:
-      '@tweakpane/plugin-essentials': ^0.2.1
-      tweakpane: ^4.0.3
-      vue: ^3.4.7
-
   vite-plus@0.1.21:
     resolution: {integrity: sha512-7MLc9abMelE8g5/vj/xEY8joWT9PLnN/XjX3FhwOliB75WOX3YADcMEFrufmvnl+D4UhrMNZQa2k3A5CSuFJhw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -3237,12 +3229,6 @@ snapshots:
 
   v-github-icon@3.3.0(vue@3.5.34(typescript@6.0.3)):
     dependencies:
-      vue: 3.5.34(typescript@6.0.3)
-
-  v-tweakpane@0.3.2(@tweakpane/plugin-essentials@0.2.1(tweakpane@4.0.5))(tweakpane@4.0.5)(vue@3.5.34(typescript@6.0.3)):
-    dependencies:
-      '@tweakpane/plugin-essentials': 0.2.1(tweakpane@4.0.5)
-      tweakpane: 4.0.5
       vue: 3.5.34(typescript@6.0.3)
 
   vite-plus@0.1.21(@tsdown/css@0.22.0)(@types/node@25.9.0)(jiti@2.6.1)(sass@1.99.0)(typescript@6.0.3)(vite@8.0.13(@types/node@25.9.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(yaml@2.9.0):
