@@ -11,15 +11,15 @@
   "dependencies": {
     "@tweakpane/plugin-camerakit": "^0.3.0",
     "@tweakpane/plugin-essentials": "^0.2.1",
-    "tweakpane": "^4.0.3",
-    "v-github-icon": "^3.2.1",
+    "tweakpane": "^4.0.5",
+    "v-github-icon": "^3.3.0",
     "v-tweakpane": "link:..",
-    "vue": "^3.4.23"
+    "vue": "^3.5.34"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "@vitejs/plugin-vue": "^6.0.7",
-    "sass": "^1.75.0",
+    "sass": "^1.99.0",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.13",
