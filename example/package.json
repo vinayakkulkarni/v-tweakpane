@@ -14,7 +14,7 @@
     "tweakpane": "^4.0.5",
     "v-github-icon": "^3.3.0",
     "v-tweakpane": "link:..",
-    "vue": "^3.5.34"
+    "vue": "^3.5.44"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
