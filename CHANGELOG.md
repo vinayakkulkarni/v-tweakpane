@@ -7,6 +7,16 @@
 
 
 
+## [0.3.5](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.4...v0.3.5) (2026-10-21)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump the npm-development group with 11 updates ([a54e6e3](https://github.com/vinayakkulkarni/v-tweakpane/commit/a54e6e3c7896c9036bf8c4a3c1f95c1e35b093dd))
+* **deps-dev:** bump the npm-development group with 11 updates ([0cf467b](https://github.com/vinayakkulkarni/v-tweakpane/commit/0cf467b0f7cdb0dfb2e16e67158c57058ba88227))
+* **deps-dev:** bump vite-plus from 0.1.21 to 1.1.0 ([25b37d1](https://github.com/vinayakkulkarni/v-tweakpane/commit/25b37d12c44e64d99f57084c47af8a09e44b6dc6))
+* **deps-dev:** bump vite-plus from 0.1.21 to 1.1.0 ([1d35e5a](https://github.com/vinayakkulkarni/v-tweakpane/commit/1d35e5a48ff5a60940b1bdde49128e2726fb3205))
+
 ## [0.3.4](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.3...v0.3.4) (2026-10-06)
 
 
