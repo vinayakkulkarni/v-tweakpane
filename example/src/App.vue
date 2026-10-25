@@ -90,7 +90,7 @@
         Vue 3 · Tweakpane 4 · Essentials plugin
       </p>
       <h1
-        class="mt-4 max-w-3xl text-4xl leading-[1.05] font-light tracking-tight text-balance sm:text-6xl"
+        class="mt-4 max-w-3xl text-4xl leading-display font-light tracking-tight text-balance sm:text-6xl"
       >
         Tweak a value. <span class="font-black">Watch it move.</span>
       </h1>
@@ -105,25 +105,28 @@
     </section>
 
     <section
-      class="grid gap-5 rounded-2xl border border-line bg-surface p-3 sm:p-5 lg:grid-cols-[minmax(0,1fr)_320px]"
+      class="grid gap-5 rounded-2xl border border-line bg-surface p-3 sm:p-5 lg:grid-cols-studio"
       aria-label="Live demo"
     >
       <div
-        class="relative aspect-square overflow-hidden rounded-xl bg-sunken lg:aspect-auto lg:min-h-[560px]"
+        class="relative aspect-square overflow-hidden rounded-xl bg-sunken lg:aspect-auto lg:min-h-140"
       >
         <RoseSketch v-bind="sketch" />
         <p
-          class="absolute bottom-3 left-4 font-mono text-[11px] text-muted sm:text-xs"
+          class="absolute bottom-3 left-4 font-mono text-micro text-muted sm:text-xs"
         >
           {{ sketch.rings }} rings × {{ sketch.petals }} petals ·
           {{ tweaks }} tweaks
         </p>
       </div>
       <div class="studio-pane min-w-0">
-        <VTweakpane
-          :pane="{ title: 'Sketch', expanded: true }"
-          @on-pane-created="onPaneCreated"
-        />
+        <!-- The component root is h-full; this wrapper keeps it content-sized. -->
+        <div>
+          <VTweakpane
+            :pane="{ title: 'Sketch', expanded: true }"
+            @on-pane-created="onPaneCreated"
+          />
+        </div>
         <p class="mt-3 px-1 text-sm leading-relaxed text-muted">
           Every control above is a Tweakpane binding on one
           <code class="font-mono text-ink">reactive()</code> object. The SVG
@@ -132,7 +135,7 @@
       </div>
     </section>
 
-    <section class="mt-16 grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
+    <section class="mt-16 grid gap-6 lg:grid-cols-aside">
       <div>
         <h2 class="text-2xl font-light tracking-tight">
           <span class="font-black">One component,</span> the whole pane API.
@@ -144,7 +147,7 @@
         </p>
       </div>
       <pre
-        class="overflow-x-auto rounded-xl border border-line bg-sunken p-5 font-mono text-[13px] leading-relaxed text-ink"
+        class="overflow-x-auto rounded-xl border border-line bg-sunken p-5 font-mono text-code leading-relaxed text-ink"
       ><code>{{ usage }}</code></pre>
     </section>
   </main>

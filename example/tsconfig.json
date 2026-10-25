@@ -11,7 +11,10 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "types": ["vite/client"],
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "v-tweakpane": ["../src/index.ts"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.vue", "vite.config.ts"]
 }

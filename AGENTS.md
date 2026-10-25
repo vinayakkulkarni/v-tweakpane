@@ -20,12 +20,15 @@
 v-tweakpane/
 ├── src/
 │   ├── components/     # VTweakpane component
-│   ├── utils/          # Helper utilities
 │   ├── index.ts        # Public exports
 │   └── install.ts      # Vue plugin installer
+├── tests/              # Component tests (vp test, happy-dom)
+├── example/            # Demo app (Vite) deployed as a Cloudflare Worker
 ├── dist/               # Built output (ESM only)
 ├── package.json
 ├── vite.config.ts
+├── wrangler.jsonc      # Demo Worker + custom domain
+├── doctor.config.ts    # vue-doctor excludes
 ├── tsconfig.json
 └── AGENTS.md
 ```

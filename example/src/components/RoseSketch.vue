@@ -66,7 +66,7 @@
     :aria-label="`Rose curve with ${petals} petals across ${Math.round(rings)} rings`"
     class="size-full"
   >
-    <g :class="spin ? 'motion-safe:animate-[spin_40s_linear_infinite]' : ''">
+    <g :class="spin ? 'motion-safe:animate-spin-slow' : ''">
       <path
         v-for="ring in paths"
         :key="ring.key"

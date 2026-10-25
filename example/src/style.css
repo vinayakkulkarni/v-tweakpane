@@ -14,6 +14,20 @@
   --color-line: oklch(0.89 0.006 95);
   --color-signal: oklch(0.64 0.19 35);
   --color-signal-ink: oklch(0.99 0.01 35);
+
+  --text-micro: 0.6875rem;
+  --text-code: 0.8125rem;
+  --leading-display: 1.05;
+  --animate-spin-slow: spin 40s linear infinite;
+}
+
+/* Demo grid: sketch beside a fixed-width pane, heading beside code. */
+@utility grid-cols-studio {
+  grid-template-columns: minmax(0, 1fr) 20rem;
+}
+
+@utility grid-cols-aside {
+  grid-template-columns: 17.5rem minmax(0, 1fr);
 }
 
 @layer base {
