@@ -2,9 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V-Tweakpane Demo</title>
+    <title>v-tweakpane · Tweakpane panels for Vue 3</title>
+    <meta
+      name="description"
+      content="v-tweakpane wraps Tweakpane as a Vue 3 component. Drop in a pane, bind values, and tweak generative art or design tools live."
+    />
+    <link rel="canonical" href="https://v-tweakpane.vinayakkulkarni.dev/" />
+    <meta property="og:title" content="v-tweakpane" />
+    <meta
+      property="og:description"
+      content="Tweakpane panels as a Vue 3 component."
+    />
+    <meta
+      property="og:url"
+      content="https://v-tweakpane.vinayakkulkarni.dev/"
+    />
+    <meta name="theme-color" content="#f7f7f5" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2318181b'/%3E%3Cpath d='M8 11h16M8 21h16' stroke='%23f2f1ee' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='13' cy='11' r='3' fill='%23e8613a'/%3E%3Ccircle cx='20' cy='21' r='3' fill='%23e8613a'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var dark =
+          stored === 'dark' ||
+          ((stored === null || stored === 'system') &&
+            matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
+    <script
+      async
+      src="https://analytics.geoql.in/js/pa-7oSsie7mtl7lP78zw4-aU.js"
+    ></script>
+    <script>
+      ((window.plausible =
+        window.plausible ||
+        function () {
+          (plausible.q = plausible.q || []).push(arguments);
+        }),
+        (plausible.init =
+          plausible.init ||
+          function (i) {
+            plausible.o = i || {};
+          }));
+      plausible.init();
+    </script>
+    <script>
+      window.op =
+        window.op ||
+        function () {
+          (window.op.q = window.op.q || []).push(Array.from(arguments));
+        };
+      window.op('init', {
+        apiUrl: 'https://events.geoql.in/api',
+        clientId: '9883c414-6817-4585-aa92-8df39b49c9f2',
+        trackScreenViews: true,
+        trackOutgoingLinks: true,
+        trackAttributes: true,
+      });
+    </script>
+    <script src="https://openpanel.dev/op1.js" defer async></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+    </script>
   </head>
   <body>
     <div id="app"></div>

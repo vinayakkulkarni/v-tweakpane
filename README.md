@@ -23,7 +23,7 @@
 
 ## Demo
 
-[![Edit v-tweakpane](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/v-tweakpane?file=src/App.vue)
+Live demo: [v-tweakpane.vinayakkulkarni.dev](https://v-tweakpane.vinayakkulkarni.dev)
 
 ---
 
@@ -118,46 +118,36 @@ export default {
 
 ### Example
 
-```html
-<template>
-  <v-tweakpane :pane="state.pane" />
-</template>
-<script lang="ts">
-  import { defineComponent, ref } from 'vue';
+```vue
+<script setup lang="ts">
+  import { reactive } from 'vue';
   import { VTweakpane } from 'v-tweakpane';
+  import type { Pane } from 'tweakpane';
+  import 'v-tweakpane/dist/index.css';
 
-  export default defineComponent({
-    name: 'App',
-    components: { VTweakpane },
-    setup() {
-      const state = ref({
-        pane: {
-          title: 'My Awesome Pane',
-          inputs: [
-            {
-              factor: 123,
-              title: 'hello',
-              color: '#0f0',
-            },
-          ],
-        },
-      });
-      return { state };
-    },
-  });
+  const params = reactive({ rings: 14, ink: '#e8613a' });
+
+  function onPaneCreated(pane: Pane) {
+    pane.addBinding(params, 'rings', { min: 1, max: 24, step: 1 });
+    pane.addBinding(params, 'ink');
+  }
 </script>
-<style>
-  @import 'v-tweakpane/dist/v-tweakpane.css';
-</style>
+
+<template>
+  <v-tweakpane
+    :pane="{ title: 'Sketch', expanded: true }"
+    @on-pane-created="onPaneCreated"
+  />
+</template>
 ```
 
 ## Contributing
 
-1. Fork it ([https://github.com/vinayakkulkarniv-tweakpane/fork](https://github.com/vinayakkulkarniv-tweakpane/fork))
+1. Fork it ([https://github.com/vinayakkulkarni/v-tweakpane/fork](https://github.com/vinayakkulkarni/v-tweakpane/fork))
 2. Create your feature branch (`git checkout -b feat/new-feature`)
 3. Commit your changes (`git commit -Sam 'feat: add feature'`)
 4. Push to the branch (`git push origin feat/new-feature`)
-5. Create a new [Pull Request](https://github.com/vinayakkulkarniv-tweakpane/compare)
+5. Create a new [Pull Request](https://github.com/vinayakkulkarni/v-tweakpane/compare)
 
 _Note_:
 
@@ -167,7 +157,7 @@ _Note_:
 
 ## Author
 
-**v-image** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarniv-tweakpane/contributors)).
+**v-tweakpane** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-tweakpane/contributors)).
 
 > [vinayakkulkarni.dev](https://vinayakkulkarni.dev) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
