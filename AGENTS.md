@@ -34,16 +34,17 @@ v-tweakpane/
 
 ## Tech Stack & Tooling
 
-| Need        | Tool                              |
-| ----------- | --------------------------------- |
-| Build       | vite-plus (vp pack)               |
-| Types       | rolldown-plugin-dts (via vp pack) |
-| Linting     | vp lint (oxlint bundled)          |
-| Formatting  | vp fmt (oxfmt bundled)            |
-| Package Mgr | pnpm                              |
-| Git Hooks   | Husky + lint-staged + commitlint  |
-| Release     | release-please                    |
-| Node        | 24                                |
+| Need        | Tool                                                               |
+| ----------- | ------------------------------------------------------------------ |
+| Build       | vite-plus (vp pack)                                                |
+| Types       | rolldown-plugin-dts (via vp pack)                                  |
+| Linting     | vp lint (oxlint bundled)                                           |
+| Formatting  | vp fmt (oxfmt bundled)                                             |
+| Package Mgr | pnpm                                                               |
+| Git Hooks   | Husky + lint-staged + commitlint                                   |
+| Release     | release-please                                                     |
+| Demo        | Vite app in `example/` on a Cloudflare Worker (`v-tweakpane-demo`) |
+| Node        | 26 (`devEngines.runtime`)                                          |
 
 ---
 
@@ -55,7 +56,10 @@ pnpm run lint:fix      # vp lint --fix
 pnpm run format        # vp fmt
 pnpm run format:check  # vp fmt --check
 pnpm run build         # vp pack (tsdown + dts)
-pnpm run test          # Tests
+pnpm run typecheck     # vue-tsc (library, tests, demo)
+pnpm run test          # vp test (happy-dom)
+pnpm run build:demo    # library + demo app
+pnpm run deploy        # build demo + wrangler deploy
 ```
 
 ---
@@ -98,5 +102,5 @@ All commits must follow conventional commit format with `Signed-off-by` trailer.
 
 ---
 
-**Last Updated:** 2026-02-08
+**Last Updated:** 2026-10-24
 **Maintainer:** Vinayak Kulkarni

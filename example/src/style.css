@@ -1,26 +1,83 @@
 @import 'tailwindcss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgb(255 255 255 / 87%);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-size-adjust: 100%;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+  --color-canvas: oklch(0.975 0.004 95);
+  --color-surface: oklch(0.995 0.002 95);
+  --color-sunken: oklch(0.945 0.005 95);
+  --color-ink: oklch(0.2 0.006 270);
+  --color-muted: oklch(0.48 0.008 270);
+  --color-line: oklch(0.89 0.006 95);
+  --color-signal: oklch(0.64 0.19 35);
+  --color-signal-ink: oklch(0.99 0.01 35);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  place-content: center;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+@layer base {
+  .dark {
+    --color-canvas: oklch(0.15 0.005 270);
+    --color-surface: oklch(0.19 0.006 270);
+    --color-sunken: oklch(0.12 0.005 270);
+    --color-ink: oklch(0.95 0.004 95);
+    --color-muted: oklch(0.7 0.008 270);
+    --color-line: oklch(0.28 0.008 270);
+    --color-signal: oklch(0.72 0.17 40);
+    --color-signal-ink: oklch(0.18 0.02 35);
+  }
+
+  html {
+    color-scheme: light;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-signal-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 2px;
+  }
+}
+
+/* Tweakpane reads its theme from these custom properties. */
+.studio-pane .tp-rotv {
+  --tp-base-background-color: var(--color-surface);
+  --tp-base-shadow-color: transparent;
+  --tp-base-font-family: var(--font-mono);
+  --tp-blade-value-width: 60%;
+  --tp-button-background-color: var(--color-ink);
+  --tp-button-background-color-active: var(--color-ink);
+  --tp-button-background-color-focus: var(--color-ink);
+  --tp-button-background-color-hover: var(--color-muted);
+  --tp-button-foreground-color: var(--color-canvas);
+  --tp-container-background-color: var(--color-sunken);
+  --tp-container-background-color-active: var(--color-line);
+  --tp-container-background-color-focus: var(--color-line);
+  --tp-container-background-color-hover: var(--color-line);
+  --tp-container-foreground-color: var(--color-ink);
+  --tp-groove-foreground-color: var(--color-line);
+  --tp-input-background-color: var(--color-sunken);
+  --tp-input-background-color-active: var(--color-line);
+  --tp-input-background-color-focus: var(--color-line);
+  --tp-input-background-color-hover: var(--color-line);
+  --tp-input-foreground-color: var(--color-ink);
+  --tp-label-foreground-color: var(--color-muted);
+  --tp-monitor-background-color: var(--color-sunken);
+  --tp-monitor-foreground-color: var(--color-muted);
+
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
 }

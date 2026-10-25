@@ -3,4 +3,11 @@ packages:
 
 allowBuilds:
   '@parcel/watcher': true
-  esbuild: set this to true or false
+  esbuild: true
+  workerd: true
+  sharp: false
+
+minimumReleaseAgeExclude:
+  - '@tsdown/css@0.23.2'
+  - tsdown@0.23.2
+  - vite-plus@1.4.0
