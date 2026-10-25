@@ -21,6 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      # knip (dead-code rules) loads vite.config.ts and the husky,
+      # lint-staged, vitest and wrangler configs. Without node_modules it
+      # cannot load them and reports every tool devDependency as unused.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6.1.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 26
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Audit with vue-doctor
         uses: geoql/doctor-action@v2
         with:
