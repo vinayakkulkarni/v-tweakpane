@@ -7,6 +7,13 @@
 
 
 
+## [0.3.6](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.5...v0.3.6) (2026-10-28)
+
+
+### Documentation
+
+* link live demo and related projects ([#2579](https://github.com/vinayakkulkarni/v-tweakpane/issues/2579)) ([6f23e35](https://github.com/vinayakkulkarni/v-tweakpane/commit/6f23e356cf8b3e116600f61ec60482ba1112e7fe))
+
 ## [0.3.5](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.4...v0.3.5) (2026-10-25)
 
 
