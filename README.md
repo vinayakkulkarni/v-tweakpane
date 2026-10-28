@@ -19,11 +19,13 @@
 
 <!-- End Badges -->
 
+**[Live demo](https://v-tweakpane.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane)** · [npm](https://www.npmjs.com/package/v-tweakpane) · [JSR](https://jsr.io/@vinayakkulkarni/v-tweakpane)
+
 ---
 
 ## Demo
 
-Live demo: [v-tweakpane.vinayakkulkarni.dev](https://v-tweakpane.vinayakkulkarni.dev)
+Live demo: [v-tweakpane.vinayakkulkarni.dev](https://v-tweakpane.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane)
 
 ---
 
@@ -45,6 +47,7 @@ Live demo: [v-tweakpane.vinayakkulkarni.dev](https://v-tweakpane.vinayakkulkarni
     - [Usage](#usage)
     - [Example](#example)
   - [Contributing](#contributing)
+  - [More from the author](#more-from-the-author)
   - [Author](#author)
 
 ### Installation
@@ -155,9 +158,20 @@ _Note_:
 2. Commits & PRs will be allowed only if the commit messages & PR titles follow the [conventional commit standard](https://www.conventionalcommits.org/), _read more about it [here](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)_
 3. PS. Ensure your commits are signed. _[Read why](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)_
 
+## More from the author
+
+- [v-intl](https://v-intl.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) — native Intl formatting components for Vue 3
+- [v-spotlight](https://v-spotlight.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) — Vue 3 spotlight overlay for product tours
+- [v-pip](https://v-pip.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) — Vue 3 wrapper for the Picture-in-Picture API
+- [v-clappr](https://v-clappr.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) — Vue 3 wrapper for the Clappr media player
+- [nxui](https://nxui.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) — animated copy-paste UI components for Vue 3 and Nuxt
+- [shadscan-vue](https://shadscan-vue.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) — UI-fundamentals audit for shadcn-vue apps
+
+See every project at [vinayakkulkarni.dev/projects](https://vinayakkulkarni.dev/projects?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) and [geoql.in](https://geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane).
+
 ## Author
 
 **v-tweakpane** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-tweakpane/contributors)).
 
-> [vinayakkulkarni.dev](https://vinayakkulkarni.dev) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
+> [vinayakkulkarni.dev](https://vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-tweakpane) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
