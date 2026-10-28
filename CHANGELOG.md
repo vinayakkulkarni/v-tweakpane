@@ -7,6 +7,24 @@
 
 
 
+## [0.3.5](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.4...v0.3.5) (2026-10-25)
+
+
+### Bug Fixes
+
+* **deps:** hold typescript at 6.0.3 and enable ga4 ([#2578](https://github.com/vinayakkulkarni/v-tweakpane/issues/2578)) ([7ab4f4f](https://github.com/vinayakkulkarni/v-tweakpane/commit/7ab4f4f17394c608efa69aea77e95c0d88b29dec))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump the npm-development group with 11 updates ([a54e6e3](https://github.com/vinayakkulkarni/v-tweakpane/commit/a54e6e3c7896c9036bf8c4a3c1f95c1e35b093dd))
+* **deps-dev:** bump the npm-development group with 11 updates ([0cf467b](https://github.com/vinayakkulkarni/v-tweakpane/commit/0cf467b0f7cdb0dfb2e16e67158c57058ba88227))
+* **deps-dev:** bump typescript from 6.0.3 to 7.0.2 ([e37d2f9](https://github.com/vinayakkulkarni/v-tweakpane/commit/e37d2f90a9784701e75b68a03281aa94544b3625))
+* **deps-dev:** bump typescript from 6.0.3 to 7.0.2 ([8bf0382](https://github.com/vinayakkulkarni/v-tweakpane/commit/8bf0382d9a2a8574c928859e31b403355e609085))
+* **deps-dev:** bump vite-plus from 0.1.21 to 1.1.0 ([25b37d1](https://github.com/vinayakkulkarni/v-tweakpane/commit/25b37d12c44e64d99f57084c47af8a09e44b6dc6))
+* **deps-dev:** bump vite-plus from 0.1.21 to 1.1.0 ([1d35e5a](https://github.com/vinayakkulkarni/v-tweakpane/commit/1d35e5a48ff5a60940b1bdde49128e2726fb3205))
+* move the demo to cloudflare workers, pnpm and latest deps ([#2577](https://github.com/vinayakkulkarni/v-tweakpane/issues/2577)) ([6c5dcd7](https://github.com/vinayakkulkarni/v-tweakpane/commit/6c5dcd7bea8a0e4b2ab6204c376781e61f467362))
+
 ## [0.3.4](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.3...v0.3.4) (2026-10-06)
 
 
