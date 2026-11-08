@@ -16,12 +16,12 @@
     "vue": "^3.5.44"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.4",
     "@tweakpane/core": "^2.0.5",
     "@vitejs/plugin-vue": "^6.0.10",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "^4.3.4",
     "typescript": "6.0.3",
-    "vite": "^8.3.5",
+    "vite": "^8.3.6",
     "vue-tsc": "^3.3.14"
   }
 }
