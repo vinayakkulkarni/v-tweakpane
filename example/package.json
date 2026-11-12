@@ -13,7 +13,7 @@
     "@tweakpane/plugin-essentials": "^0.2.1",
     "tweakpane": "^4.0.5",
     "v-tweakpane": "workspace:*",
-    "vue": "^3.5.44"
+    "vue": "^3.5.45"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.5",
