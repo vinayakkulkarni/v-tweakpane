@@ -7,6 +7,26 @@
 
 
 
+## [0.3.7](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.6...v0.3.7) (2026-11-12)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump the npm-development group with 2 updates ([8d60502](https://github.com/vinayakkulkarni/v-tweakpane/commit/8d6050257e0920281c5f3189237cb7d4b12fa593))
+* **deps-dev:** bump the npm-development group with 2 updates ([25095e3](https://github.com/vinayakkulkarni/v-tweakpane/commit/25095e30601b7e3ad2e62245f7e7b89ffd583b75))
+* **deps-dev:** bump the npm-development group with 2 updates ([da0f042](https://github.com/vinayakkulkarni/v-tweakpane/commit/da0f042bd291b458d02e99cdff46d02476a4ebe4))
+* **deps-dev:** bump the npm-development group with 2 updates ([32eec22](https://github.com/vinayakkulkarni/v-tweakpane/commit/32eec22ca46fec6863e605c551188aa3e2049dff))
+* **deps-dev:** bump the npm-development group with 3 updates ([30e78d3](https://github.com/vinayakkulkarni/v-tweakpane/commit/30e78d3f8b63b6f1595ccaff7209e777aaa58bd3))
+* **deps-dev:** bump the npm-development group with 3 updates ([2d0f6f0](https://github.com/vinayakkulkarni/v-tweakpane/commit/2d0f6f05c1e5c5797354728b864102b35a766fe9))
+* **deps-dev:** bump the npm-development group with 3 updates ([7e63b07](https://github.com/vinayakkulkarni/v-tweakpane/commit/7e63b07092cd1882efe7687a4eb8406551038f17))
+* **deps-dev:** bump the npm-development group with 3 updates ([2b36db2](https://github.com/vinayakkulkarni/v-tweakpane/commit/2b36db25fd0bf4b7f2dbce58b006b03f5a6f25cb))
+* **deps-dev:** bump the npm-development group with 5 updates ([c7b5708](https://github.com/vinayakkulkarni/v-tweakpane/commit/c7b5708594b38e08dae49c29e5a7b7826e1b2bd6))
+* **deps-dev:** bump the npm-development group with 5 updates ([e8d854a](https://github.com/vinayakkulkarni/v-tweakpane/commit/e8d854a5790d9506b5a2afa26c69450c6b2e4af2))
+* **deps-dev:** bump wrangler ([ba2593b](https://github.com/vinayakkulkarni/v-tweakpane/commit/ba2593bcfccfae330d33a6e5a147af0f75dfaf4d))
+* **deps-dev:** bump wrangler ([dff5d10](https://github.com/vinayakkulkarni/v-tweakpane/commit/dff5d103356d0f3bd17c70f58a91bfa83b8b755d))
+* **deps-dev:** bump wrangler from 4.152.0 to 4.153.0 in the npm-development group ([2b006d8](https://github.com/vinayakkulkarni/v-tweakpane/commit/2b006d8467c4c640b99f70a56c5f1d291ea1730e))
+* **deps-dev:** bump wrangler from 4.156.0 to 4.156.2 in the npm-development group ([3fa9954](https://github.com/vinayakkulkarni/v-tweakpane/commit/3fa9954b9b759ff531eb94a3e4886bcf6a174c80))
+
 ## [0.3.6](https://github.com/vinayakkulkarni/v-tweakpane/compare/v0.3.5...v0.3.6) (2026-10-28)
 
 
